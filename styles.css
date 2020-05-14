@@ -16,15 +16,7 @@
   background: -moz-radial-gradient(circle, rgb(65, 102, 202) -60%, rgba(0, 0, 0, 0.8901960784313725) 75%);
   background: -o-radial-gradient(circle, rgb(65, 102, 202) -60%, rgba(0, 0, 0, 0.8901960784313725) 75%);
 }
-html {
-    overflow: hidden;
-    height: 100%;
-}
 
-body {
-    height: 100%;
-    overflow: auto;
-}
 .icon-gradient-dark {
 	background: -webkit-gradient(linear, left top, left bottom, from(#37f), to(#555))!important;
 	-webkit-background-clip: text!important;
