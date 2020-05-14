@@ -16,7 +16,15 @@
   background: -moz-radial-gradient(circle, rgb(65, 102, 202) -60%, rgba(0, 0, 0, 0.8901960784313725) 75%);
   background: -o-radial-gradient(circle, rgb(65, 102, 202) -60%, rgba(0, 0, 0, 0.8901960784313725) 75%);
 }
+html {
+    overflow: hidden;
+    height: 100%;
+}
 
+body {
+    height: 100%;
+    overflow: auto;
+}
 .icon-gradient-dark {
 	background: -webkit-gradient(linear, left top, left bottom, from(#37f), to(#555))!important;
 	-webkit-background-clip: text!important;
@@ -92,6 +100,9 @@
   font-family: "Archivo Black", "Archivo", sans-serif;
 }
 
+
+
+
 .name-light {
   margin-top: 12%;
   margin-bottom:15px;
@@ -107,7 +118,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#48c6ef",endCo
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 animation: 1s ease-out 0s 1 slide;
-    text-shadow: 7px 0px 0px #58cdf3;
+    text-shadow: -7px 0px 0px #58cdf3;
 }
 ::selection {
   background: #b3d4fc;
@@ -116,10 +127,19 @@ animation: 1s ease-out 0s 1 slide;
 
 
       @keyframes slide {
-  0% {
-    opacity: 0;
+  
+  0%{
+     opacity: 0;
   }
-  100% {
+  30%{
+    letter-spacing: 25px;
+   
+  }
+  85%{
+    letter-spacing: 8px;
+
+  }
+   100% {
     opacity: 100;
   }
 }
@@ -275,7 +295,25 @@ input:checked + .slider:before {
 
   .name-light h1{
     font-size: 220%;
+     text-shadow: -3px 0px 0px #58cdf3;
   }
+   @keyframes slide {
+  
+  0%{
+     opacity: 0;
+  }
+  30%{
+    letter-spacing: 6px;
+   
+  }
+  85%{
+    letter-spacing: 3px;
+
+  }
+   100% {
+    opacity: 100;
+  }
+}
   .icon-page-1 {
   margin-left: 15px;
   margin-right: 15px;
@@ -351,6 +389,23 @@ input:checked + .slider:before {
 {
     margin-top:40%;
 }
+ @keyframes slide {
+  
+  0%{
+     opacity: 0;
+  }
+  30%{
+    letter-spacing: 12px;
+   
+  }
+  85%{
+    letter-spacing: 6px;
+
+  }
+   100% {
+    opacity: 100;
+  }
+}
 }
 @media (min-width: 320px) and (max-width: 480px) {
 .icon-page-1 {
@@ -371,6 +426,23 @@ input:checked + .slider:before {
      .mtop
 {
     margin-top:50%;
+}
+ @keyframes slide {
+  
+  0%{
+     opacity: 0;
+  }
+  30%{
+    letter-spacing: 12px;
+   
+  }
+  85%{
+    letter-spacing: 4px;
+
+  }
+   100% {
+    opacity: 100;
+  }
 }
 }
 @media (min-width: 1281px) {
@@ -431,8 +503,25 @@ input:checked + .slider:before {
 }
   .name-light h1{
     font-size: 800%;
+     text-shadow: -5px 0px 0px #58cdf3;
   }
+  @keyframes slide {
+  
+  0%{
+     opacity: 0;
+  }
+  30%{
+    letter-spacing: 20px;
+   
+  }
+  85%{
+    letter-spacing: 6px;
 
+  }
+   100% {
+    opacity: 100;
+  }
+}
   .icons {
     padding-bottom: 12%;
   }
@@ -456,6 +545,7 @@ input:checked + .slider:before {
 
   .name-light h1{
     font-size: 600%;
+     text-shadow: -4px 0px 0px #58cdf3;
   }
 
   .icons {
@@ -477,6 +567,7 @@ input:checked + .slider:before {
 
   .name-light h1{
     font-size: 500%;
+     text-shadow: -4px 0px 0px #58cdf3;
   }
 
   .icons {
@@ -498,6 +589,7 @@ input:checked + .slider:before {
 
   .name-light h1{
     font-size: 300%;
+     text-shadow: -4px 0px 0px #58cdf3;
   }
 
   .icons {
